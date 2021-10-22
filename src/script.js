@@ -18,7 +18,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.TorusGeometry(.7, .2, 16, 100);
+const geometry = new THREE.TorusKnotGeometry(.6, .1, 400, 12, 12, 9);
 
 const particlesGeometry = new THREE.BufferGeometry;
 const particlesCount = 5000;
@@ -147,3 +147,12 @@ const tick = () => {
 }
 
 tick()
+
+
+// vanilla-tilt.js options
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 3,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3
+});
