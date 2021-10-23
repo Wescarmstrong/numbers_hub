@@ -1,12 +1,12 @@
 // Calculate numbers from data source
-let dataDate = new Date("10/01/2021");
+let dataDate = new Date("10-01-2021");
+console.log(dataDate);
 let startAmountData = 20766;
 let apy = 0.0686;
 const yearInMs = 31557600000;  // A year in ms
 
 // To calculate the time difference between now and startDate
 let Difference_In_Time = Date.now() - dataDate.getTime();
-
 let percentageOfYearElapsed = Difference_In_Time / yearInMs;
 
 // To calculate the no. of days between two dates (for testing)
@@ -18,7 +18,6 @@ let startAmount = startAmountData + amountEarned;
 
 // Get End Amount based on Start amount + year
 let endAmount = startAmount * (1 + apy);
-
 
 // Animate numbers in real time
 function animateNumber(callback, from, to, duration) {
