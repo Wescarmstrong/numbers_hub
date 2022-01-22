@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numbers Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 
 <body>
     <div class="header-container">
         <div class="header">
-            <h1 class="headerh1">HubFi </h1>
+            <h1 class="headerh1">HubFi</h1>
             <p class="headerp"> </p>
         </div>
         <div class="headerDivide">
@@ -23,29 +25,38 @@
                 <div class="content">
                     <h2>NW</h2>
                     <h3 class="card-header">Net Worth</h3>
-                    <h3 id="card-value-1">10123.000000</h3>
+                    <h3 id="card-value-1">12123.000000</h3>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
-                    <h2>BTC</h2>
-                    <h3 class="card-header">Bitcoin NW</h3>
-                    <h3>10123.00000000</h3>
+                    <h2>Cash</h2>
+                    <h3 class="card-header">Cash</h3>
+                    <h3 id="card-value-2">10123.00000000</h3>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <h2>EQ</h2>
                     <h3 class="card-header">Equity</h3>
-                    <h3>10123.00000000</h3>
+                    <h3 id="card-value-3">10123.00000000</h3>
+                </div>
+            </div>
+            <div class="chart_card">
+                <div class="content">
+                    <div id="highChart"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <canvas class="webgl"></canvas>
+    
+    <script type="text/javascript" src="three.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript" src="number-calc.js"></script>
+    <script type="text/javascript" src="highChart.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -35,4 +35,12 @@ function animateNumber(callback, from, to, duration) {
 
 animateNumber(value => {
   document.querySelector('#card-value-1').textContent = value.toFixed(6);
-}, startAmount, endAmount, 31557600000);
+}, startAmount, endAmount, 3155760000);
+
+animateNumber(value => {
+  document.querySelector('#card-value-2').textContent = value.toFixed(6);
+}, startAmount+23541, endAmount, 31557600000);
+
+animateNumber(value => {
+  document.querySelector('#card-value-3').textContent = value.toFixed(6);
+}, startAmount+402562, endAmount, 51557600000);
