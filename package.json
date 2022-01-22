@@ -1,4 +1,8 @@
 {
+  "name": "numbers-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
